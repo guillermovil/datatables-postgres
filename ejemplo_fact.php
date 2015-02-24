@@ -5,7 +5,8 @@
 <script type='text/javascript' language='javascript' src='media/js/jquery.dataTables.js'></script>
 <script type='text/javascript' language='javascript'>
 $(document).ready(function() {
-	var table = $('#example').DataTable({
+// es dataTable, sino no te andan las funciones x ej  si queres después hacerle un fnGetData te daria error.
+	var table = $('#example').dataTable({
 		'processing': true,
 		'paging': true,
 		'pagingType': 'full_numbers', //full
