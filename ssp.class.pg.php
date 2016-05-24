@@ -264,10 +264,10 @@ class SSP {
 	static function pg_connect( $pg_details )
 	{
 		$db =  pg_connect("
-			host={$pg_details['host']} 
-			dbname={$pg_details['db']} 
-			user={$pg_details['user']} 
-			password={$pg_details['pass']}") or SSP::fatal("Error en conexión a DB.\n". pg_last_error()) ;
+			host='{$pg_details['host']}' 
+			dbname='{$pg_details['db']}' 
+			user='{$pg_details['user']}' 
+			password='{$pg_details['pass']}'") or SSP::fatal("Error en conexión a DB.\n". pg_last_error()) ;
 		return $db;
 	}
 
